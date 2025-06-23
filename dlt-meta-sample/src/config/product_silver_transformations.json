@@ -1,0 +1,17 @@
+[
+  {
+    "target_table": "product",
+    "select_exp": [
+      "ProductID",
+      "ProductNumber",
+      "ProductName",
+      "ModelName",
+      "MakeFlag",
+      "StandardCost",
+      "ListPrice",
+      "SubCategoryID"
+    ]
+  }
+]
+
+							
