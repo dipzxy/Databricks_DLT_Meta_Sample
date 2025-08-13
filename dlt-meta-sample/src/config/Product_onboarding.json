@@ -7,7 +7,7 @@
       "source_details": {
          "source_database": "product",
          "source_table": "product",
-         "source_path_dev": "abfss://landing@<storage account name>.dfs.core.windows.net/product",
+         "source_path_dev": "/Volumes/dev_catalog/default/my-test-volume/landing/product",
          "source_metadata": {
             "include_autoloader_metadata_column": "True",
             "autoloader_metadata_col_name": "source_metadata",
@@ -24,7 +24,7 @@
          "cloudFiles.inferColumnTypes": "true",
          "cloudFiles.rescuedDataColumn": "_rescued_data"
       },
-      "bronze_table_path_dev": "abfss://bronze@<storage account name>.dfs.core.windows.net/product",
+      "bronze_table_path_dev": "/Volumes/dev_catalog/default/my-test-volume/bronze/product",
       "silver_database_dev": "silver",
       "silver_table": "product",
       "silver_cdc_apply_changes": {
@@ -34,7 +34,7 @@
          "sequence_by": "ProductID",
          "scd_type": "1"
       },
-      "silver_table_path_dev": "abfss://silver@<storage account name>.dfs.core.windows.net/product",
-      "silver_transformation_json_dev": "abfss://config@<storage account name>.dfs.core.windows.net/product_silver_transformations.json"
+      "silver_table_path_dev": "/Volumes/dev_catalog/default/my-test-volume/silver/product",
+      "silver_transformation_json_dev": "/Volumes/dev_catalog/default/my-test-volume/config/product_silver_transformations.json"
    }
 ]

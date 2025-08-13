@@ -4,6 +4,6 @@
 # COMMAND ----------
 
 layer = spark.conf.get("layer", None)
-
+# layer = None
 from src.dataflow_pipeline import DataflowPipeline
 DataflowPipeline.invoke_dlt_pipeline(spark, layer)
